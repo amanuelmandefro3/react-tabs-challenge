@@ -49,8 +49,8 @@ export default function Home() {
            <button className={` ${activeTab == 4?"bg-[#07597A]" : "bg-[#1A1A1A]"  } w-full hover:bg-[#262626]`} onClick={()=>setActiveTab(4)}>Task 4 </button>
         </div>
         {loading ?  <div>
-          <Skeleton className='h-20 w-24' />
-          <Skeleton className="h-76 w-full" />
+          <Skeleton className='h-16 w-32 mb-2' />
+          <Skeleton className="h-80 w-[100%]" />
 
         </div> : error ? <p className="text-center text-red-500">{error}</p> : <Card activeTab={activeTab} data={data} /> }
        
